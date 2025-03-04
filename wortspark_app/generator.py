@@ -20,7 +20,7 @@ class WandelScriptGenerator():
     SystemMessage(content= system_msg, **{"icl_samples":icl_samples}),
     HumanMessage(content= user_msg)
 ]
-    def execute(self,  model="gpt-4", json_output= True):
+    def execute(self,  model="gpt-4o-mini", json_output= True):
         """Calls the open AI api, captures and returns the response.
         model: model name as a string.
         json_output:Bool -> If the user requires the output in a json format."""
@@ -34,5 +34,5 @@ class WandelScriptGenerator():
             return json_obj
         return result
 
-# gen= WandelScriptGenerator(system_msg= prompt, user_msg="Move from home to a position A and come back to home.")
-# print(gen.execute()['code'])
+gen= WandelScriptGenerator(system_msg= prompt, user_msg="Move from home to a position A with a UR5 robot.")
+print(gen.execute()['code'])
