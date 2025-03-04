@@ -12,5 +12,8 @@ langchain-openai
 langchain-text-splitters
 langgraph
 openai
+fastapi
+nova
+loguru
 wandelbots
 wandelbots-api-client

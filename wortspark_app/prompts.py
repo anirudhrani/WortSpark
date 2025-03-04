@@ -121,6 +121,13 @@ prompt= """
                 •	Invert the pose of the new frame (~pose_of_robot_in_world)
                 •	Concatenate with the original position
                 •	This adjusts the coordinates to the appropriate coordinate system, taking into account any shifts or rotations.
+        18.) The default TCP must be set to flange. Make sure you specifically mention the below line for any user query.
+                tcp("Flange")
+        19.) Initialize the robot as shown:
+                tcp("Flange")
+                robot = get_controller("controller_name")[0]
+                do with robot:
+                        ...
 
         ------------------------------------------------------------
         Examples: {icl_samples}
