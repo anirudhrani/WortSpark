@@ -17,3 +17,4 @@ nova
 loguru
 wandelbots
 wandelbots-api-client
+decouple
