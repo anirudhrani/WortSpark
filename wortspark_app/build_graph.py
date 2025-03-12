@@ -19,8 +19,6 @@ args = parser.parse_args()
 task_description= args.query
 
 def build_graph(image:bool= True):
-    sample_generator = SampleGenerator()
-    icl_samples= sample_generator.demonstrations()
 
     # Instantiate Generator
     ws_gen = WandelScriptGenerator()

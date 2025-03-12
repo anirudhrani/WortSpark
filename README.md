@@ -1,13 +1,16 @@
-# Wortspark App
+# Wortspark
 
-This template contains a simple python app served by [fastapi](https://github.com/tiangolo/fastapi).
-It shows you how to move a robot with the [wandelbots python API client](https://pypi.org/project/wandelbots-api-client/) and the [python api](https://github.com/wandelbotsgmbh/wandelbots-python).
+Wortspark is a modular agentic orchestration framework built upon [Wandelscript](https://github.com/wandelbotsgmbh/wandelscript) and [LangGraph](https://github.com/langchain-ai/langgraph), empowering users to intuitively visualize and interact with robotic simulations in NVIDIA Isaac Sim environment. (Currently Under development)
 
-Use the following steps for development:
+## 📌 Notes
 
-* Install all dependencies with `poetry install`
-* ensure proper environment variables are set in `.env`
-    * note: you might need to set/update `NOVA_ACCESS_TOKEN` and `NOVA_API`
-* use `poetry run serve` to run the the server
-    * access the example on `http://localhost:3000`
-* install the app with `nova app install`
+Future enhancements include fine-tuned agents, complete integration with [Wandelbots NOVA](https://www.wandelbots.com/) and [NVIDIA Isaac Sim](https://developer.nvidia.com/isaac/sim).
+
+## 🔒 License
+
+This project is private and proprietary. Unauthorized copying, distribution, or usage of this software, in whole or in part, is strictly prohibited without prior written permission from the authors.
+
+© 2025 Wandelbots GmbH, Arizona State University, Venkat Satya Anirudh Rani (Ven). All rights reserved.
+
+For licensing inquiries, contact: vrani@asu.edu
+
