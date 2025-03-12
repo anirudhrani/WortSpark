@@ -2,7 +2,6 @@ numpy
 pandas
 poetry
 jupyter
-huggingface
 python-dotenv
 langchain
 langchain-openai

@@ -1,24 +1,26 @@
-[tool.poetry]
-name = "wortspark_app"
-version = "0.0.1"
+[project]
+name = "wortspark"
+version = "0.1.0"
 description = ""
+authors = [
+    {name = "Anirudh Rani (Ven)",email = "anirudhrvs@gmail.com"}
+]
 readme = "README.md"
-package-mode = false
+requires-python = ">=3.12.0,<4.0"
+dependencies = [
+    "python-dotenv (>=1.0.1,<2.0.0)",
+    "langchain (>=0.3.20,<0.4.0)",
+    "langchain-openai (>=0.3.8,<0.4.0)",
+    "langchain-community (>=0.3.19,<0.4.0)",
+    "langchain-core (>=0.3.44,<0.4.0)",
+    "langchain-text-splitters (>=0.3.6,<0.4.0)",
+    "langgraph (>=0.3.7,<0.4.0)",
+    "openai (>=1.66.2,<2.0.0)",
+    "antlr4-python3-runtime (>=4.13.2,<5.0.0)",
+    "uvicorn (>=0.34.0,<0.35.0)"
+]
 
-[tool.poetry.dependencies]
-python = "^3.10"
-fastapi = "^0.111.0"
-loguru = "^0.7.2"
-wandelbots-nova = "^0.26.2"
-python-decouple = "^3.8"
-requests = "^2.32.3"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.group.dev.dependencies]
-pylint = "2.17"
-
-[tool.poetry.scripts]
-serve = "wortspark_app:main"

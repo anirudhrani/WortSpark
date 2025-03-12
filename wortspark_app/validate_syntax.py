@@ -3,6 +3,7 @@ from antlr4 import InputStream, CommonTokenStream
 from grammar.wandelscriptLexer import wandelscriptLexer 
 from grammar.wandelscriptParser import wandelscriptParser 
 
+
 class WortSparkErrorListener(ErrorListener):
     def __init__(self):
         super(WortSparkErrorListener, self).__init__()
@@ -10,8 +11,6 @@ class WortSparkErrorListener(ErrorListener):
 
     def syntaxError(self, recognizer, offendingSymbol, line, column, msg, e):
         self.errors.append(f"Line {line}, Column {column}: {msg}")
-
-
 
 def is_valid_code(code: str) -> (bool, list):
     input_stream = InputStream(code)
