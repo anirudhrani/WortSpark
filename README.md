@@ -10,7 +10,7 @@ Future enhancements include fine-tuned agents, complete integration with [Wandel
 
 This project is private and proprietary. Unauthorized copying, distribution, or usage of this software, in whole or in part, is strictly prohibited without prior written permission from the authors.
 
-© 2025 Wandelbots GmbH, Arizona State University, Venkat Satya Anirudh Rani (Ven). All rights reserved.
+© 2025 Wandelbots GmbH, Arizona State University, Venkata Satya Anirudh Rani (Ven). All rights reserved.
 
 For licensing inquiries, contact: vrani@asu.edu
 
