@@ -7,7 +7,7 @@ class SampleGenerator:
         1. Generates demonstrations (first thirty demonstrations from the basic samples).
         2. Generates unseen demonstrations picked randomly either from basic samples or complex samples."""
 
-    def __init__(self, dataset_path="wortspark_app/data/dataset.jsonl"):
+    def __init__(self, dataset_path="data/dataset.jsonl"):
         self.data = []
         with open(dataset_path, 'r') as f:
             for line in f:
